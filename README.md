@@ -19,13 +19,12 @@ These instructions will help you set up and run the project on your local machin
 
 1. Clone the repository to your local machine:
    ```
-   git clone https://github.com/your-username/flutter-date-picker.git
+   git clone https://github.com/VinayakHinduja/Horzonal-Date-Picker.git
    ```
-   Replace `your-username` and `flutter-date-picker` with your GitHub username and repository name.
-
+   
 2. Navigate to the project directory:
    ```
-   cd flutter-date-picker
+   cd Horzonal-Date-Picker
    ```
 
 3. Install the dependencies:
