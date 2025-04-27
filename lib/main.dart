@@ -15,7 +15,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   final ScrollController _scrollController = ScrollController();
   DateTime selectedDate = DateTime.now();
-  final double itemWidth = 100.0;
+  final double itemWidth = 50;
   final int itemCount = 365;
   final int visibleItems = 7;
 
@@ -105,17 +105,24 @@ class _MyAppState extends State<MyApp> {
                               Text(
                                 DateFormat('E').format(date),
                                 style: TextStyle(
-                                  fontSize: 14,
+                                  fontSize: 12,
                                   color: isSelected ? Colors.blue : Colors.grey,
                                 ),
                               ),
                               Text(
                                 date.day.toString(),
                                 style: TextStyle(
-                                  fontSize: 24,
-                                  fontWeight: FontWeight.bold,
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.w600,
                                   color:
                                       isSelected ? Colors.blue : Colors.black,
+                                ),
+                              ),
+                              Text(
+                                DateFormat('MMM').format(date),
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  color: isSelected ? Colors.blue : Colors.grey,
                                 ),
                               ),
                             ],
@@ -124,7 +131,7 @@ class _MyAppState extends State<MyApp> {
                             Container(
                               width: 8,
                               height: 8,
-                              margin: const EdgeInsets.only(top: 10),
+                              margin: const EdgeInsets.only(top: 5),
                               decoration: const BoxDecoration(
                                 color: Colors.blue,
                                 shape: BoxShape.circle,
